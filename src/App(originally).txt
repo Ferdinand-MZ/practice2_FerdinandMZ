@@ -1,0 +1,33 @@
+import './App.css'
+import Greets from './Components/Greets'
+import Person from './Components/Person'
+import PersonList from './Components/PersonList'
+
+function App() {
+
+  const personName = {
+    fName : "Bruce",
+    lName : "Wayne"
+  }
+
+  const nameList = [
+    {
+      fName : "Bruce",
+      lName : "Wayne"
+    },
+    {
+      fName : "Peter",
+      lName : "Parker"
+  },
+];
+
+  return (
+    <div className='app'>
+      <Greets name={'Ferdinand'} messageCount={20} isLoggedIn={true}/>
+      <Person name= {personName}/>
+      <PersonList names={nameList}/>
+    </div>
+  )
+}
+
+export default App
